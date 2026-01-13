@@ -1,0 +1,161 @@
+Here is a clear, structured brief for your lovable AI page on barefootluxury.mx, built from everything you answered. You can give this to a designer/dev or use it to refine the concept.
+
+1. Role and Goals of the AI
+AI positioning: A super luxurious, warm-but-sophisticated “Barefoot Luxury Advisor” that speaks directly to high‑net‑worth buyers (US/Canada/Europe) wanting a Tulum home radically different from their dense city life.
+
+Main goals:
+
+Capture leads and pre‑qualify them (budget, preferred amenities, automation level).
+
+Book on‑site visits and virtual calls.
+
+Offer virtual tour scheduling and send curated projects that match the client’s “dream brief” (wellness features, room count, style).
+
+2. Page Structure and Tabs
+The AI should live as hero of the homepage of barefootluxury.mx, plus a dedicated page later (e.g., /concierge).
+
+Suggested sections/tabs:
+
+Hero + AI concierge
+
+Minimal AI character representing “barefoot” walking through jungle/house.
+
+Welcome message + first questions: dream, budget, timeline.
+
+About Barefoot Luxury
+
+Short story: boutique developer of 4–5 bedroom jungle houses near the ocean, low footprint, outdoor‑focused architecture, wellness features (plunge pools, saunas, red‑light rooms, retreats).
+
+Emphasize: bespoke design, no two houses the same, 3D walkthrough process to align with client vision.
+
+Houses & Projects
+
+Grid or slider of current and past houses:
+
+Price range: USD 500,000–1,000,000.
+
+Features: private jungle paths, natural pools, wellness rooms, retreat‑ready layouts, walking/bike distance (~1 km) to ocean and restaurants/hotel zone.
+
+AI can ask: “Do you prefer more privacy in the jungle or closer access to restaurants/beach?”
+
+Investment & Return
+
+Explain minimum investment (~USD 500–600k), positioning as lifestyle + asset.
+
+AI asks about:
+
+Purpose (lifestyle, rental, mixed).
+
+Expected use (personal retreats, hosted retreats, pure investment).
+
+Visit & Contact
+
+AI guides user to:
+
+Book physical visit (site + built houses).
+
+Book video call/virtual tour.
+
+Integrate: WhatsApp button + Calendly link + Odoo lead capture.
+
+3. Visual Style and UX
+References: Azulik Developments, Selva Dentro, Aura Habitat, Alma Huatulco, Nativa Playa, Cuatro Cuatros, Uxan Tulum (for mood, not to copy).
+
+Palette: Sand beige + jungle green + white + natural wood + gold accents for luxury.
+
+Hero vibe: Minimal, elegant AI character (barefoot silhouette or line‑art figure) that appears in:
+
+The hero section.
+
+As a small floating chat bubble on mobile.
+
+Mobile-first:
+
+Designed mainly for Instagram traffic on phones.
+
+Very clear buttons: “Talk to Barefoot Advisor”, “Book Visit”, “See Available Houses”.
+
+Avoid heavy text; use the AI to reveal details progressively.
+
+4. Conversation Flow for the AI
+Initial flow:
+
+Warm welcome:
+
+“Welcome to Barefoot Luxury in Tulum. Ready to discover a jungle home unlike anything you have back home?”
+
+Qualification block (light but clear):
+
+Desired budget range (starting at 500–600k).
+
+Use preference: personal use, retreats, investment.
+
+Priority features:
+
+Wellness (plunge pool, sauna, red room, outdoor baths).
+
+Automation/smart home.
+
+Proximity (more jungle vs closer to restaurants/hotel zone).
+
+Showcase block:
+
+AI suggests 2–3 houses or concepts that fit.
+
+Shows: a couple of renders, summary, key wellness features.
+
+Option to:
+
+“Book an on‑site visit”
+
+“Schedule a video tour”
+
+Lead capture block:
+
+Name, email, WhatsApp.
+
+Preferred date/time for visit or call.
+
+AI explains that the sales director → sales manager → dedicated agent will follow up personally.
+
+Follow‑up block:
+
+Send recap: “Here is what you told us you’re dreaming of…”
+
+Option to receive a PDF brochure or video link (generic now, real content later).
+
+5. Technical and Integration Requirements
+Platform: WordPress as main; AI/chat widget integrated via plugin or custom embed; keep option to mirror essentials in Squarespace if needed.
+
+Integrations:
+
+WhatsApp (click‑to‑chat with prefilled message from AI summary).
+
+Calendly (or similar) for booking visits and calls.
+
+Odoo CRM:
+
+AI should send each qualified lead with tags: BUDGET, PURPOSE, PRIORITY FEATURES, LANGUAGE.
+
+Dev needs: webhook/API endpoint from Odoo to push leads directly.
+
+Content placeholders:
+
+Use generic images and sample floorplans now (12 renders: rooms, bathrooms, living, kitchen, stairs, exteriors, pool, front, 3D plans, etc.).
+
+Later you swap to real images, 3D tours, and 360° paths.
+
+6. KPIs and Behavior
+Target KPIs Q1 2026:
+
+~30 qualified leads/month.
+
+~8 physical visits/month.
+
+~USD 2.2M in sales pipeline from barefootluxury.mx.
+
+AI should be optimized to:
+
+Reduce friction (few fields, more conversation).
+
+Push towards visit/meeting booking rather than just info browsing.
