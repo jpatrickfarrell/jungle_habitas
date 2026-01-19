@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Wifi, Wind, Waves, TreePalm } from "lucide-react";
-import { Link } from "wouter";
 import project1 from "@assets/generated_images/modern_jungle_villa_exterior_with_pool.png";
 import project2 from "@assets/generated_images/luxury_bedroom_in_jungle_setting.png";
 import project3 from "@assets/generated_images/outdoor_wellness_area_with_red_light_room.png";
@@ -46,46 +45,45 @@ export function ProjectsGrid() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
           {projects.map((project, index) => (
-            <Link key={project.id} href={`/property/${project.id}`}>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="group cursor-pointer"
-              >
-                <div className="relative aspect-[4/5] overflow-hidden rounded-sm mb-6">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute top-4 left-4 flex gap-2">
-                    {project.tags.map(tag => (
-                      <span key={tag} className="bg-white/90 backdrop-blur text-primary text-[10px] uppercase tracking-wider px-2 py-1 rounded-sm">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <div className="flex justify-between items-baseline">
-                    <h3 className="text-2xl font-serif text-primary group-hover:text-accent transition-colors">
-                      {project.title}
-                    </h3>
-                    <span className="text-sm font-medium text-muted-foreground">
-                      {project.price}
+            <motion.div
+              key={project.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="group cursor-pointer"
+            >
+              <div className="relative aspect-[4/5] overflow-hidden rounded-sm mb-6">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute top-4 left-4 flex gap-2">
+                  {project.tags.map(tag => (
+                    <span key={tag} className="bg-white/90 backdrop-blur text-primary text-[10px] uppercase tracking-wider px-2 py-1 rounded-sm">
+                      {tag}
                     </span>
-                  </div>
-                  <div className="flex gap-4 text-xs text-muted-foreground uppercase tracking-wider pt-2 border-t border-border/50">
-                    {project.features.map((feature, i) => (
-                      <span key={i}>{feature}</span>
-                    ))}
-                  </div>
+                  ))}
                 </div>
-              </motion.div>
-            </Link>
+              </div>
+
+              <div className="space-y-2">
+                <div className="flex justify-between items-baseline">
+                  <h3 className="text-2xl font-serif text-primary group-hover:text-accent transition-colors">
+                    {project.title}
+                  </h3>
+                  <span className="text-sm font-medium text-muted-foreground">
+                    {project.price}
+                  </span>
+                </div>
+                <div className="flex gap-4 text-xs text-muted-foreground uppercase tracking-wider pt-2 border-t border-border/50">
+                  {project.features.map((feature, i) => (
+                    <span key={i}>{feature}</span>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
           ))}
         </div>
 
