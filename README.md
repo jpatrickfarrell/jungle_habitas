@@ -1,4 +1,4 @@
-# Barefoot Luxury | Tulum
+# Jungle Habitas | Tulum
 
 A luxury villa showcase website for Jungle Habitas in Tulum. Built with React, Express, and Vite.
 
@@ -23,14 +23,14 @@ npm install
 npm run dev
 ```
 
-The app starts at **http://localhost:5000**. This runs the Express server which serves both the API and the Vite dev server (with HMR).
+The app starts at **http://localhost:3000**. This runs the Express server which serves both the API and the Vite dev server (with HMR).
 
 ### Available Scripts
 
 | Command | What it does |
 |---------|-------------|
-| `npm run dev` | Start dev server (API + Vite HMR) on port 5000 |
-| `npm run dev:client` | Start Vite only (no API) on port 5000 |
+| `npm run dev` | Start dev server (API + Vite HMR) on port 3000 |
+| `npm run dev:client` | Start Vite only (no API) on port 3000 |
 | `npm run build` | Build client + server for production |
 | `npm start` | Run the production build |
 | `npm run check` | TypeScript type checking |
@@ -40,7 +40,7 @@ The app starts at **http://localhost:5000**. This runs the Express server which 
 
 | Variable | Required | Description |
 |----------|----------|-------------|
-| `PORT` | No | Server port (default: 5000) |
+| `PORT` | No | Server port (default: 3000) |
 | `DATABASE_URL` | No | PostgreSQL connection string (only if using DB features) |
 | `SITE_URL` | No | Your deployed URL, e.g. `https://yourdomain.com` (used for og:image meta tags) |
 

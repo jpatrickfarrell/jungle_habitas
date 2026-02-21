@@ -81,12 +81,11 @@ app.use((req, res, next) => {
   }
 
   // Serve the app on the port specified in PORT env var (default 5000).
-  const port = parseInt(process.env.PORT || "5000", 10);
+  const port = parseInt(process.env.PORT || "3000", 10);
   httpServer.listen(
     {
       port,
       host: "0.0.0.0",
-      reusePort: true,
     },
     () => {
       log(`serving on port ${port}`);

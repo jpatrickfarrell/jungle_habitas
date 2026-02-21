@@ -19,7 +19,7 @@ export function AiConcierge() {
     {
       id: "1",
       role: "assistant",
-      text: "Welcome to Barefoot Luxury. I'm your advisor. Are you looking for a personal retreat, an investment property, or a mix of both?",
+      text: "Welcome to Jungle Habitas. I'm your advisor. Are you looking for a personal retreat, an investment property, or a mix of both?",
       options: ["Personal Retreat", "Investment Only", "Mix of Both"]
     }
   ]);
@@ -96,7 +96,7 @@ export function AiConcierge() {
                   <img src={avatarImage} alt="AI Advisor" className="w-full h-full object-contain" />
                 </div>
                 <div>
-                  <h3 className="font-serif text-lg text-primary">Barefoot Advisor</h3>
+                  <h3 className="font-serif text-lg text-primary">Jungle Advisor</h3>
                   <div className="flex items-center gap-1.5">
                     <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
                     <span className="text-[10px] uppercase tracking-widest text-muted-foreground">Online Now</span>
