@@ -39,16 +39,18 @@ export default function Home() {
             Our advisor is ready to curate a selection just for you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
+            <a
+              href="/contact"
               className="bg-white text-primary px-8 py-4 uppercase tracking-widest text-sm hover:bg-white/90 transition-colors font-medium"
             >
               Book a Site Visit
-            </button>
-            <button
+            </a>
+            <a
+              href="/contact"
               className="border border-white/40 text-white px-8 py-4 uppercase tracking-widest text-sm hover:bg-white/10 transition-colors backdrop-blur-sm"
             >
               Schedule Video Call
-            </button>
+            </a>
           </div>
         </div>
       </section>

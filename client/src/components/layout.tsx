@@ -14,10 +14,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
   }, []);
 
   const navItems = [
-    { label: "About", href: "#about" },
-    { label: "Houses", href: "#houses" },
-    { label: "Investment", href: "#investment" },
-    { label: "Contact", href: "#contact" },
+    { label: "About", href: "/#about" },
+    { label: "Houses", href: "/houses" },
+    { label: "Investment", href: "/#investment" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
@@ -49,7 +49,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 {item.label}
               </a>
             ))}
-            <a href="#contact">
+            <a href="/contact">
               <Button variant="outline" className={`uppercase text-xs tracking-widest transition-all ${
                 isScrolled
                   ? "border-accent text-accent hover:bg-accent hover:text-white"
@@ -82,7 +82,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 {item.label}
               </a>
             ))}
-            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+            <a href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
               <Button className="w-full bg-accent text-white uppercase tracking-widest">
                 Book Visit
               </Button>
@@ -110,9 +110,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="space-y-4">
             <h4 className="text-accent uppercase tracking-widest text-sm">Explore</h4>
             <ul className="space-y-2 text-white/70 font-light">
-              <li><a href="#houses" className="hover:text-white transition-colors">The Houses</a></li>
-              <li><a href="#investment" className="hover:text-white transition-colors">Investment</a></li>
-              <li><a href="#about" className="hover:text-white transition-colors">Our Philosophy</a></li>
+              <li><a href="/houses" className="hover:text-white transition-colors">The Houses</a></li>
+              <li><a href="/#investment" className="hover:text-white transition-colors">Investment</a></li>
+              <li><a href="/#about" className="hover:text-white transition-colors">Our Philosophy</a></li>
             </ul>
           </div>
 

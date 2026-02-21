@@ -90,10 +90,10 @@ export function ProjectsGrid() {
         </div>
 
         <div className="mt-16 text-center">
-           <button className="inline-flex items-center gap-2 text-primary border-b border-primary pb-1 hover:text-accent hover:border-accent transition-colors uppercase text-sm tracking-widest group">
-            View All Projects 
+           <Link href="/houses" className="inline-flex items-center gap-2 text-primary border-b border-primary pb-1 hover:text-accent hover:border-accent transition-colors uppercase text-sm tracking-widest group">
+            View All Projects
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-           </button>
+           </Link>
         </div>
       </div>
     </section>

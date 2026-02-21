@@ -44,7 +44,7 @@ export function Hero() {
               Explore Homes
             </a>
             <a
-              href="#contact"
+              href="/contact"
               className="bg-amber-600/80 backdrop-blur-sm border border-amber-500/40 text-white px-8 py-4 uppercase tracking-widest text-sm hover:bg-amber-600/90 transition-all duration-300"
             >
               Book a Visit
