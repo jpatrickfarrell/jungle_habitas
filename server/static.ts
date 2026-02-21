@@ -13,7 +13,15 @@ export function serveStatic(app: Express) {
   app.use(express.static(distPath));
 
   // fall through to index.html if the file doesn't exist
+  // Replace __SITE_URL__ placeholders for social crawler compatibility
+  const indexHtml = fs.readFileSync(
+    path.resolve(distPath, "index.html"),
+    "utf-8",
+  );
+  const siteUrl = process.env.SITE_URL || "";
+  const renderedHtml = indexHtml.replace(/__SITE_URL__/g, siteUrl);
+
   app.use("*", (_req, res) => {
-    res.sendFile(path.resolve(distPath, "index.html"));
+    res.status(200).set({ "Content-Type": "text/html" }).end(renderedHtml);
   });
 }

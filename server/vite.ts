@@ -48,6 +48,9 @@ export async function setupVite(server: Server, app: Express) {
         `src="/src/main.tsx"`,
         `src="/src/main.tsx?v=${nanoid()}"`,
       );
+      // Replace __SITE_URL__ for social crawler OG tags
+      const siteUrl = process.env.SITE_URL || `http://localhost:${process.env.PORT || "3000"}`;
+      template = template.replace(/__SITE_URL__/g, siteUrl);
       const page = await vite.transformIndexHtml(url, template);
       res.status(200).set({ "Content-Type": "text/html" }).end(page);
     } catch (e) {

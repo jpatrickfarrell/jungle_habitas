@@ -42,7 +42,7 @@ The app starts at **http://localhost:3000**. This runs the Express server which 
 |----------|----------|-------------|
 | `PORT` | No | Server port (default: 3000) |
 | `DATABASE_URL` | No | PostgreSQL connection string (only if using DB features) |
-| `SITE_URL` | No | Your deployed URL, e.g. `https://yourdomain.com` (used for og:image meta tags) |
+| `SITE_URL` | **Yes (production)** | Your deployed URL, e.g. `https://yourdomain.com`. **Required** for social sharing — OG images need absolute URLs for WhatsApp/Instagram previews. Auto-defaults to `http://localhost:3000` in dev. |
 
 ## Deploy to Vercel
 
